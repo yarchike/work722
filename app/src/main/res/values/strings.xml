@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">work722</string>
+
+    <string name="number">Введите номер телефона</string>
+    <string name="text_sms">Введите текст сообщения</string>
+
+    <string name="call">Звоним</string>
+    <string name="send_sms">Отправляем</string>
+    <string name="no_access">Разрешение не дано</string>
+    <string name="no_nuber">Вы не ввели номер или сообшение</string>
+    <string name="send_message">Сообщение отправлено</string>
+</resources>
