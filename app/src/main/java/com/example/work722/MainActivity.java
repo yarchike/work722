@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
         } else {
             SmsManager smgr = SmsManager.getDefault();
-            if(number_text.getText().toString().equals("") || text_sms.getText().toString().equals("")){
+            if (number_text.getText().toString().equals("") || text_sms.getText().toString().equals("")) {
                 Toast toast = Toast.makeText(getApplicationContext(), getText(R.string.no_nuber), Toast.LENGTH_LONG);
                 toast.show();
-            }else {
+            } else {
                 smgr.sendTextMessage(number_text.getText().toString(), null, text_sms.getText().toString(), null, null);
                 Toast toast = Toast.makeText(getApplicationContext(), getText(R.string.send_message), Toast.LENGTH_LONG);
                 toast.show();
@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast toast = Toast.makeText(getApplicationContext(), getText(R.string.no_access), Toast.LENGTH_LONG);
                     toast.show();
                 }
-
         }
     }
 
